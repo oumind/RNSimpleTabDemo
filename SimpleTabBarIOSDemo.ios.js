@@ -10,7 +10,8 @@ import {
   View,
   SegmentedControlIOS
 } from 'react-native';
-import SimpleSegmentedControlDemo from './SimpleSegmentedControlDemo'
+import SimpleSegmentedControlDemo from './SimpleSegmentedControlDemo';
+import SimpleScrollableTabDemo from './SimpleScrollableTabDemo';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 class SimpleTabBarIOSDemo extends Component {
@@ -77,7 +78,7 @@ class SimpleTabBarIOSDemo extends Component {
               presses: this.state.presses + 1
             });
           }}>
-          {this.renderContent('#21551C', 'Green Tab', this.state.presses)}
+          <SimpleScrollableTabDemo/>
         </TabBarIOS.Item>
         <Icon.TabBarItemIOS
           title="Settings"
